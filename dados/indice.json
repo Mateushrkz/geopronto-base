@@ -1,0 +1,1338 @@
+{
+ "camadas": {
+  "assentamentos": {
+   "arquivo_origem": "Assentamento Brasil.shp",
+   "data_arquivo": "2026-10-05",
+   "orgao": "Incra",
+   "poligonos": 8214,
+   "titulo": "Assentamentos",
+   "ufs": {
+    "AC": {
+     "arquivo": "assentamentos_AC.geojson.gz",
+     "bbox": [
+      -73.51306721,
+      -11.06436536,
+      -66.62650917,
+      -7.22364747
+     ],
+     "bytes": 742072,
+     "poligonos": 134,
+     "sha256": "09ad90c6309fcdbb523558b97cb2b1cbc198b1b34e0830d40a7177975441ff76"
+    },
+    "AL": {
+     "arquivo": "assentamentos_AL.geojson.gz",
+     "bbox": [
+      -38.15157694,
+      -10.23696064,
+      -35.1554715,
+      -8.86696365
+     ],
+     "bytes": 210780,
+     "poligonos": 152,
+     "sha256": "2012d4d30cc8c74b2e7d722ecc377fd30367d86d65cbf35d35967aa973a95589"
+    },
+    "AM": {
+     "arquivo": "assentamentos_AM.geojson.gz",
+     "bbox": [
+      -72.63319138,
+      -9.51630332,
+      -56.3582626,
+      -1.36800868
+     ],
+     "bytes": 1164325,
+     "poligonos": 132,
+     "sha256": "61f809f80f9ab305deb6589055f2fda2177fbfc6883702b045911b58b64d6a7b"
+    },
+    "AP": {
+     "arquivo": "assentamentos_AP.geojson.gz",
+     "bbox": [
+      -52.50667601,
+      -1.13198833,
+      -49.90554535,
+      3.95920833
+     ],
+     "bytes": 209154,
+     "poligonos": 44,
+     "sha256": "08c08b853ff64017437028b4418c86e6f8aa164112c3b6c70e1cbeb5618edccb"
+    },
+    "BA": {
+     "arquivo": "assentamentos_BA.geojson.gz",
+     "bbox": [
+      -45.87105248,
+      -18.10904941,
+      -37.64373904,
+      -8.68053822
+     ],
+     "bytes": 768637,
+     "poligonos": 561,
+     "sha256": "54d9c44bcf35a03925a4ac55b21b0185036b425dc2e80dca6b6af386c290f5d5"
+    },
+    "CE": {
+     "arquivo": "assentamentos_CE.geojson.gz",
+     "bbox": [
+      -41.32916774,
+      -7.76142549,
+      -37.38691377,
+      -2.83378091
+     ],
+     "bytes": 337415,
+     "poligonos": 422,
+     "sha256": "b2b7b5fce51b37ee769e9d7168d4aa68f4e2af70063e0399a6db8ec49f5339eb"
+    },
+    "DF": {
+     "arquivo": "assentamentos_DF.geojson.gz",
+     "bbox": [
+      -48.69480803,
+      -17.35598596,
+      -45.10091164,
+      -13.23054553
+     ],
+     "bytes": 708621,
+     "poligonos": 217,
+     "sha256": "b78cc79bfa9e8b0c6366691572536ae75229aa5063700ce4c90e90e3d6e0106f"
+    },
+    "ES": {
+     "arquivo": "assentamentos_ES.geojson.gz",
+     "bbox": [
+      -41.78678289,
+      -21.20445111,
+      -39.76536617,
+      -17.92580306
+     ],
+     "bytes": 167499,
+     "poligonos": 70,
+     "sha256": "82b0d109f1146ef2191b40115ed0edd39589c5692fe0934678b8367e893fb180"
+    },
+    "GO": {
+     "arquivo": "assentamentos_GO.geojson.gz",
+     "bbox": [
+      -52.98053111,
+      -19.28696693,
+      -48.01030152,
+      -12.87239861
+     ],
+     "bytes": 738136,
+     "poligonos": 303,
+     "sha256": "8bc86e533a87b6972f0b6332acad6d3c714d23480592b323c574f24c4d79f650"
+    },
+    "MA": {
+     "arquivo": "assentamentos_MA.geojson.gz",
+     "bbox": [
+      -48.341335,
+      -7.98562865,
+      -41.87785013,
+      -1.24129261
+     ],
+     "bytes": 1187377,
+     "poligonos": 824,
+     "sha256": "c9b800e68ec383f4855bb0b1cc4b461353ac3510d09a8ef7c02ad193fdb00a48"
+    },
+    "MG": {
+     "arquivo": "assentamentos_MG.geojson.gz",
+     "bbox": [
+      -50.81251712,
+      -21.65907203,
+      -39.92346766,
+      -14.28442377
+     ],
+     "bytes": 1068491,
+     "poligonos": 261,
+     "sha256": "32fc18c337a77f2c01597969807336e4040d6a81b96d27e19eb5c2e1863365ff"
+    },
+    "MS": {
+     "arquivo": "assentamentos_MS.geojson.gz",
+     "bbox": [
+      -57.85519304,
+      -24.02618889,
+      -51.61774583,
+      -17.89376433
+     ],
+     "bytes": 440044,
+     "poligonos": 171,
+     "sha256": "79328cf60d82f4a95225f743562d0284a0d7a1a14439c1fba4fa63f989aa56ce"
+    },
+    "MT": {
+     "arquivo": "assentamentos_MT.geojson.gz",
+     "bbox": [
+      -60.1690924,
+      -17.67848741,
+      -50.39282482,
+      -9.00175044
+     ],
+     "bytes": 1011071,
+     "poligonos": 406,
+     "sha256": "33335db36006b4a846491349558fa6ccfe8d7caa616810e59b5b2bd0de16ca04"
+    },
+    "PA": {
+     "arquivo": "assentamentos_PA.geojson.gz",
+     "bbox": [
+      -57.90555583,
+      -9.68802111,
+      -46.07202933,
+      0.19199542
+     ],
+     "bytes": 5753209,
+     "poligonos": 1082,
+     "sha256": "28bfbfc3fbce7c8f1cdd7aadd1786b12891adc7ccae0265988cd5eeb6576081d"
+    },
+    "PB": {
+     "arquivo": "assentamentos_PB.geojson.gz",
+     "bbox": [
+      -38.73077536,
+      -8.29124286,
+      -34.8111027,
+      -6.26954318
+     ],
+     "bytes": 488944,
+     "poligonos": 278,
+     "sha256": "356367cc67716ed15688d84b9d3cdd6c301ba93dc698cf249a4f66064a829186"
+    },
+    "PE": {
+     "arquivo": "assentamentos_PE.geojson.gz",
+     "bbox": [
+      -40.89637291,
+      -9.44412746,
+      -34.78797011,
+      -7.39789058
+     ],
+     "bytes": 1373613,
+     "poligonos": 601,
+     "sha256": "eaa3a6907b126477d3b3a7092723690b5c6341729afd574992166f77f01a77ea"
+    },
+    "PI": {
+     "arquivo": "assentamentos_PI.geojson.gz",
+     "bbox": [
+      -45.15738809,
+      -10.27914167,
+      -40.55534382,
+      -2.71475423
+     ],
+     "bytes": 514780,
+     "poligonos": 471,
+     "sha256": "906679946c4e21e94811e7a1c0f8a5b6184c37a356919a66684bc0e052f4bdea"
+    },
+    "PR": {
+     "arquivo": "assentamentos_PR.geojson.gz",
+     "bbox": [
+      -54.38464917,
+      -26.66054,
+      -48.80621688,
+      -22.55319861
+     ],
+     "bytes": 889279,
+     "poligonos": 311,
+     "sha256": "e6fdbf8dc06a6bd746d1ae4f125ddd1bdd8eb707892caf7bfab2a5118eda34ad"
+    },
+    "RJ": {
+     "arquivo": "assentamentos_RJ.geojson.gz",
+     "bbox": [
+      -44.73294567,
+      -23.10383054,
+      -41.00493083,
+      -21.24906812
+     ],
+     "bytes": 103744,
+     "poligonos": 53,
+     "sha256": "82c4e3763ad04037da7c8bdd5dce445263b9106519edd10cc0090fba036f8792"
+    },
+    "RN": {
+     "arquivo": "assentamentos_RN.geojson.gz",
+     "bbox": [
+      -37.99502251,
+      -6.57494518,
+      -35.27381825,
+      -4.88001259
+     ],
+     "bytes": 177769,
+     "poligonos": 289,
+     "sha256": "21dcb4c24bb682a988d18c259bf8e642fda40c95d4e3b43153df8fc2fbd69816"
+    },
+    "RO": {
+     "arquivo": "assentamentos_RO.geojson.gz",
+     "bbox": [
+      -65.30342409,
+      -13.58135307,
+      -60.21592413,
+      -8.0864091
+     ],
+     "bytes": 614875,
+     "poligonos": 258,
+     "sha256": "b78a20a4a4fa16cf1ce6ab2d15022e610061056b0fb3bddf160dac0e0de58a26"
+    },
+    "RR": {
+     "arquivo": "assentamentos_RR.geojson.gz",
+     "bbox": [
+      -62.00090729,
+      -0.25261586,
+      -59.28686308,
+      3.94438943
+     ],
+     "bytes": 157944,
+     "poligonos": 51,
+     "sha256": "a2e1da1ccba2ade6b3f570e90115062200a1d305fea51e2ba7ddaeaa8fc0636d"
+    },
+    "RS": {
+     "arquivo": "assentamentos_RS.geojson.gz",
+     "bbox": [
+      -56.95489,
+      -32.21194705,
+      -50.42240265,
+      -27.46942889
+     ],
+     "bytes": 509166,
+     "poligonos": 217,
+     "sha256": "4bb219346fb1f324975cbe558bcfb684decc2a62c79108beaa655554e9b6a406"
+    },
+    "SC": {
+     "arquivo": "assentamentos_SC.geojson.gz",
+     "bbox": [
+      -53.6768565,
+      -27.83812114,
+      -48.5019137,
+      -26.08852675
+     ],
+     "bytes": 626623,
+     "poligonos": 141,
+     "sha256": "3d8338db52090a6752e87d10ae08534a50b52e1294809caa614248b3d5ff010b"
+    },
+    "SE": {
+     "arquivo": "assentamentos_SE.geojson.gz",
+     "bbox": [
+      -38.23851673,
+      -11.54389585,
+      -36.56403275,
+      -9.53624235
+     ],
+     "bytes": 327706,
+     "poligonos": 215,
+     "sha256": "6a81664632cc76201b7833277b5d998d6966db3591176c912e82ba094541625f"
+    },
+    "SP": {
+     "arquivo": "assentamentos_SP.geojson.gz",
+     "bbox": [
+      -52.87396424,
+      -24.51280446,
+      -45.3042726,
+      -19.96228234
+     ],
+     "bytes": 595231,
+     "poligonos": 209,
+     "sha256": "b92a6b83a52efd2fc1818fb20838aa640480c3b17ffa033bcff6e6f526e3635b"
+    },
+    "TO": {
+     "arquivo": "assentamentos_TO.geojson.gz",
+     "bbox": [
+      -50.04580312,
+      -13.26784306,
+      -46.69785854,
+      -5.17989574
+     ],
+     "bytes": 821808,
+     "poligonos": 341,
+     "sha256": "64d0b9ac8d664cfe59bc58bc4d71a938e78c8e82b14b30964a76708ce30ba267"
+    }
+   }
+  },
+  "biomas": {
+   "arquivo_origem": "lml_bioma_e250k_v20250911_A.shp",
+   "data_arquivo": "2025-10-30",
+   "orgao": "IBGE",
+   "poligonos": 6,
+   "titulo": "Biomas",
+   "ufs": {
+    "BR": {
+     "arquivo": "biomas_BR.geojson.gz",
+     "bbox": [
+      -73.98318216,
+      -33.75117799,
+      -28.84777035,
+      5.26958083
+     ],
+     "bytes": 10097792,
+     "poligonos": 6,
+     "sha256": "03a8233c4f745113b729a4bcc9ae84040864b50d7c16437c12af776cd41bdf83"
+    }
+   }
+  },
+  "quilombolas": {
+   "arquivo_origem": "Áreas de Quilombolas.shp",
+   "data_arquivo": "2026-10-05",
+   "orgao": "Incra",
+   "poligonos": 445,
+   "titulo": "Áreas quilombolas",
+   "ufs": {
+    "AL": {
+     "arquivo": "quilombolas_AL.geojson.gz",
+     "bbox": [
+      -37.11226012,
+      -10.02815175,
+      -36.35358379,
+      -9.44487891
+     ],
+     "bytes": 4129,
+     "poligonos": 3,
+     "sha256": "5cbbcc6b819ca139e170402ba456b8e7d9dfc4da4e9fa22069b255cad7f55488"
+    },
+    "AM": {
+     "arquivo": "quilombolas_AM.geojson.gz",
+     "bbox": [
+      -63.81667629,
+      -3.11009869,
+      -56.99607788,
+      -2.07518531
+     ],
+     "bytes": 28729,
+     "poligonos": 2,
+     "sha256": "fca305369a98bc3b6730a6555f1929a1e7025d8ad96a82468d75ee80ccd90263"
+    },
+    "AP": {
+     "arquivo": "quilombolas_AP.geojson.gz",
+     "bbox": [
+      -51.25730656,
+      0.03645848,
+      -50.6996974,
+      2.95513313
+     ],
+     "bytes": 32875,
+     "poligonos": 9,
+     "sha256": "3d7d543adeeeb23b6bdcc0b60f955b29ee692c2627994c45a1663b3849968bdb"
+    },
+    "BA": {
+     "arquivo": "quilombolas_BA.geojson.gz",
+     "bbox": [
+      -43.96980499,
+      -17.82430839,
+      -38.03049837,
+      -8.76408934
+     ],
+     "bytes": 182686,
+     "poligonos": 51,
+     "sha256": "adf9558f003555711291ae38caa8b3dee7178ab54e387637e435ffcd4deed66c"
+    },
+    "CE": {
+     "arquivo": "quilombolas_CE.geojson.gz",
+     "bbox": [
+      -41.11317135,
+      -7.32287221,
+      -37.65727715,
+      -2.81768717
+     ],
+     "bytes": 54690,
+     "poligonos": 14,
+     "sha256": "ef4bf981bea20ffee4399e40895a9807884988c7c7661d85aeb60e9c704181aa"
+    },
+    "ES": {
+     "arquivo": "quilombolas_ES.geojson.gz",
+     "bbox": [
+      -41.28908003,
+      -20.74533396,
+      -39.75942198,
+      -18.50332944
+     ],
+     "bytes": 20061,
+     "poligonos": 9,
+     "sha256": "136052737ce003698cc0a43e56aad02c613cd80be8569a3adf12bff032c10d53"
+    },
+    "GO": {
+     "arquivo": "quilombolas_GO.geojson.gz",
+     "bbox": [
+      -52.82041491,
+      -17.5930247,
+      -46.46239585,
+      -13.10228306
+     ],
+     "bytes": 136918,
+     "poligonos": 10,
+     "sha256": "51d58d543b0912503e8902025159d72f6b79e9e487a310a924965096e98d43c3"
+    },
+    "MA": {
+     "arquivo": "quilombolas_MA.geojson.gz",
+     "bbox": [
+      -55.55995419,
+      -15.44019219,
+      -42.6699947,
+      -1.45016376
+     ],
+     "bytes": 70207,
+     "poligonos": 68,
+     "sha256": "4079045237d06e84240661b0899a7c718b14621fbfe896350190ab3370b9c238"
+    },
+    "MG": {
+     "arquivo": "quilombolas_MG.geojson.gz",
+     "bbox": [
+      -46.93874325,
+      -19.94182855,
+      -40.48532052,
+      -14.44621196
+     ],
+     "bytes": 149689,
+     "poligonos": 23,
+     "sha256": "99c054316144d2696bdc5b28e5fe91f003c579d1d6b04b6ca64120285f0aaa0c"
+    },
+    "MS": {
+     "arquivo": "quilombolas_MS.geojson.gz",
+     "bbox": [
+      -55.83115047,
+      -22.17702893,
+      -54.52740596,
+      -19.89731276
+     ],
+     "bytes": 8038,
+     "poligonos": 9,
+     "sha256": "f9d86b2c71e282cf59f66981d248f3c80c603ec640bd284316ebaaed16aa6109"
+    },
+    "MT": {
+     "arquivo": "quilombolas_MT.geojson.gz",
+     "bbox": [
+      -57.12107222,
+      -16.06508857,
+      -56.37299092,
+      -15.34635239
+     ],
+     "bytes": 4473,
+     "poligonos": 4,
+     "sha256": "1c9ca114ae8e4e8107d9acb21ecfa2b21078e48e046b211b8dfc0c8b49ab4cef"
+    },
+    "PA": {
+     "arquivo": "quilombolas_PA.geojson.gz",
+     "bbox": [
+      -57.21798992,
+      -3.36236874,
+      -46.23969841,
+      -0.59781809
+     ],
+     "bytes": 290571,
+     "poligonos": 80,
+     "sha256": "c093d0d22a3ca8f5464d44e8d3fa1dc9d37c320641e39267fe0fbd07126cdf1a"
+    },
+    "PB": {
+     "arquivo": "quilombolas_PB.geojson.gz",
+     "bbox": [
+      -38.2991497,
+      -7.51373418,
+      -34.80942126,
+      -6.81363305
+     ],
+     "bytes": 10280,
+     "poligonos": 9,
+     "sha256": "e63aca65c8735ffaa5519eccdc0eb6aee722dc7dae95e0c3eac220a60224e63a"
+    },
+    "PE": {
+     "arquivo": "quilombolas_PE.geojson.gz",
+     "bbox": [
+      -39.53676645,
+      -9.02780731,
+      -36.37565678,
+      -8.10590069
+     ],
+     "bytes": 21882,
+     "poligonos": 10,
+     "sha256": "9310cd7f47cdf398383fa6dc98ce52a78c45d330827ad5c6c56b53c9ab2856ba"
+    },
+    "PI": {
+     "arquivo": "quilombolas_PI.geojson.gz",
+     "bbox": [
+      -44.55610377,
+      -9.45880092,
+      -40.91915527,
+      -3.70591908
+     ],
+     "bytes": 18880,
+     "poligonos": 15,
+     "sha256": "334f86be1c1ba584d7b7de77354bfeee9fa28780057743d4e8718abb85c4b847"
+    },
+    "PR": {
+     "arquivo": "quilombolas_PR.geojson.gz",
+     "bbox": [
+      -54.18771427,
+      -26.47945472,
+      -48.4998553,
+      -24.02994219
+     ],
+     "bytes": 62623,
+     "poligonos": 10,
+     "sha256": "eb72486b5a15b428916836ca44665c5e4e5eb1bae615a58d30a829b85a9cee48"
+    },
+    "RJ": {
+     "arquivo": "quilombolas_RJ.geojson.gz",
+     "bbox": [
+      -44.7353647,
+      -23.31010396,
+      -41.76514933,
+      -21.06334261
+     ],
+     "bytes": 43713,
+     "poligonos": 21,
+     "sha256": "ad53d9d0aeff153059bffb929f1d29d5ff7b7079627f56ce1bb3462959f0a3e4"
+    },
+    "RN": {
+     "arquivo": "quilombolas_RN.geojson.gz",
+     "bbox": [
+      -37.6157501,
+      -6.62556579,
+      -35.51512844,
+      -5.50224289
+     ],
+     "bytes": 8096,
+     "poligonos": 9,
+     "sha256": "c86add9ddcfc40d7b1e1ee20838eb8c193ff8e5956a7b9ba47b76be047dd0ead"
+    },
+    "RO": {
+     "arquivo": "quilombolas_RO.geojson.gz",
+     "bbox": [
+      -64.49701776,
+      -13.02138614,
+      -62.6561922,
+      -12.15096386
+     ],
+     "bytes": 19344,
+     "poligonos": 6,
+     "sha256": "53229dfba3dc88bf9c530268b8e0a2dcc3fbab127c4d35adb926786369f02904"
+    },
+    "RS": {
+     "arquivo": "quilombolas_RS.geojson.gz",
+     "bbox": [
+      -56.44478041,
+      -31.6002695,
+      -50.12132731,
+      -27.9662213
+     ],
+     "bytes": 28578,
+     "poligonos": 28,
+     "sha256": "1b51d592603e17da240facb01af00d521bd6994117091bc151f3719a3e9ea133"
+    },
+    "SC": {
+     "arquivo": "quilombolas_SC.geojson.gz",
+     "bbox": [
+      -51.19039266,
+      -29.35153016,
+      -48.41553533,
+      -27.0428143
+     ],
+     "bytes": 19675,
+     "poligonos": 6,
+     "sha256": "c6e103415fa610d36cf8edbf757070327236be76e4f1a6e462d6b172224ddb93"
+    },
+    "SE": {
+     "arquivo": "quilombolas_SE.geojson.gz",
+     "bbox": [
+      -37.9366805,
+      -11.54788537,
+      -36.40185619,
+      -9.75196687
+     ],
+     "bytes": 102593,
+     "poligonos": 20,
+     "sha256": "64f4b2c042b903d3ca0d985377dd4dbc83f5b566d0bb710bace3d6142ddc3c94"
+    },
+    "SP": {
+     "arquivo": "quilombolas_SP.geojson.gz",
+     "bbox": [
+      -48.84664728,
+      -25.02349533,
+      -44.72441147,
+      -23.01575314
+     ],
+     "bytes": 161865,
+     "poligonos": 23,
+     "sha256": "a3e1211d1bda487baa318c73d59ef686ed020459b4aeda7f7a4e965d40d55c93"
+    },
+    "TO": {
+     "arquivo": "quilombolas_TO.geojson.gz",
+     "bbox": [
+      -48.72276035,
+      -13.28956129,
+      -47.07213192,
+      -5.56096954
+     ],
+     "bytes": 17328,
+     "poligonos": 6,
+     "sha256": "756c59928d1e3d96a30eb2cbdd2b92c138a363af8e7f1be0de510a9deafd13ae"
+    }
+   }
+  },
+  "snci": {
+   "arquivo_origem": "Imóvel certificado SNCI Brasil.shp",
+   "data_arquivo": "2026-10-05",
+   "orgao": "Incra",
+   "poligonos": 52784,
+   "titulo": "SNCI – Certificadas",
+   "ufs": {
+    "AC": {
+     "arquivo": "snci_AC.geojson.gz",
+     "bbox": [
+      -73.39077736,
+      -11.06436536,
+      -66.63306341,
+      -7.59363162
+     ],
+     "bytes": 275555,
+     "poligonos": 238,
+     "sha256": "9e0bf5cdd916d71135e6ccc701d5f1d1e8f307c528519d95ac92c006e99c340c"
+    },
+    "AL": {
+     "arquivo": "snci_AL.geojson.gz",
+     "bbox": [
+      -38.15161453,
+      -10.25619951,
+      -35.31275592,
+      -8.91013832
+     ],
+     "bytes": 33750,
+     "poligonos": 31,
+     "sha256": "00eb377011e2fc2123c36afceaff781291ed1695a885504788fd302c960fffc4"
+    },
+    "AM": {
+     "arquivo": "snci_AM.geojson.gz",
+     "bbox": [
+      -72.63319137,
+      -9.68240479,
+      -56.64912021,
+      -1.01659671
+     ],
+     "bytes": 397493,
+     "poligonos": 149,
+     "sha256": "2069cbb737ea81d248014b87bd85a7a7be3bd3cf393e34d84f30373ad82cedee"
+    },
+    "AP": {
+     "arquivo": "snci_AP.geojson.gz",
+     "bbox": [
+      -52.15978783,
+      -0.34731097,
+      -50.3435925,
+      1.65283856
+     ],
+     "bytes": 376805,
+     "poligonos": 37,
+     "sha256": "2a5261260fbbcad8fc789e00d8f6c52582a57a4e5a801899ebb0d645d53f7b5a"
+    },
+    "BA": {
+     "arquivo": "snci_BA.geojson.gz",
+     "bbox": [
+      -46.56095855,
+      -18.26724329,
+      -37.46593268,
+      -8.56669911
+     ],
+     "bytes": 1467898,
+     "poligonos": 2795,
+     "sha256": "4b3e7cc5c0993a5302fb3102165fc54dca439652f822daa1d0440a1d7298e895"
+    },
+    "CE": {
+     "arquivo": "snci_CE.geojson.gz",
+     "bbox": [
+      -41.23253543,
+      -7.5889618,
+      -37.35368634,
+      -2.7886599
+     ],
+     "bytes": 350682,
+     "poligonos": 767,
+     "sha256": "2a3f2173fb82a9462d253282e18ad376a5482c4e9bffa50b6db25216f5e9fdb1"
+    },
+    "DF": {
+     "arquivo": "snci_DF.geojson.gz",
+     "bbox": [
+      -48.45008285,
+      -16.08528153,
+      -46.7717753,
+      -14.20987641
+     ],
+     "bytes": 182430,
+     "poligonos": 317,
+     "sha256": "c81cbe97a109ffd3d54eb83fbc1e48374d32ccf75ed1401d88e97ce66f8f4a4b"
+    },
+    "ES": {
+     "arquivo": "snci_ES.geojson.gz",
+     "bbox": [
+      -41.70834667,
+      -21.03721642,
+      -39.69548146,
+      -17.91603937
+     ],
+     "bytes": 196593,
+     "poligonos": 235,
+     "sha256": "6b72f6175df414a105650ab67960fea86a571d11ac74d64e1fa7426dbab768a7"
+    },
+    "GO": {
+     "arquivo": "snci_GO.geojson.gz",
+     "bbox": [
+      -56.49537612,
+      -24.01994917,
+      -45.96618351,
+      -12.78932356
+     ],
+     "bytes": 5146188,
+     "poligonos": 5004,
+     "sha256": "ca14e44b88df64c342f6245cdbbec811c46ba94851f6b88281509253606a8d83"
+    },
+    "MA": {
+     "arquivo": "snci_MA.geojson.gz",
+     "bbox": [
+      -48.36749058,
+      -9.61440465,
+      -41.80274489,
+      -1.61745985
+     ],
+     "bytes": 488223,
+     "poligonos": 1015,
+     "sha256": "4e0f859adc25cdb513b5a878cf080e51478f70d69f8b4bad8d5bc487c178e5cc"
+    },
+    "MG": {
+     "arquivo": "snci_MG.geojson.gz",
+     "bbox": [
+      -51.01956629,
+      -22.82528666,
+      -39.90612318,
+      -14.10396631
+     ],
+     "bytes": 5027631,
+     "poligonos": 4103,
+     "sha256": "d33eca24a091354aed00bc180fb9c8925ef08380e4f6751c2f2e9581c2cf6a65"
+    },
+    "MS": {
+     "arquivo": "snci_MS.geojson.gz",
+     "bbox": [
+      -57.99730055,
+      -24.01338504,
+      -50.95569616,
+      -17.18984607
+     ],
+     "bytes": 7579156,
+     "poligonos": 9707,
+     "sha256": "e27e684949bf6eced43f2b2b5276ec8f706bdee680973f4a2652283e20b8c66d"
+    },
+    "MT": {
+     "arquivo": "snci_MT.geojson.gz",
+     "bbox": [
+      -61.53715487,
+      -18.04199554,
+      -50.22286474,
+      -7.82661686
+     ],
+     "bytes": 5437549,
+     "poligonos": 7413,
+     "sha256": "5ad90644fab7eb0dde8cedf678ae2e3bf26f62ea4de6ba36674394227125a8d5"
+    },
+    "PA": {
+     "arquivo": "snci_PA.geojson.gz",
+     "bbox": [
+      -57.06111209,
+      -9.79769711,
+      -46.28393664,
+      -0.23633182
+     ],
+     "bytes": 1597405,
+     "poligonos": 1117,
+     "sha256": "e9d0d8d15c815930717112fd6e32ee0d5b37722e4b5facb7c0e0a4bff5fb2009"
+    },
+    "PB": {
+     "arquivo": "snci_PB.geojson.gz",
+     "bbox": [
+      -38.62511041,
+      -8.24114986,
+      -34.80905695,
+      -6.31055039
+     ],
+     "bytes": 111293,
+     "poligonos": 358,
+     "sha256": "138fbc0e503557e4e75a804eb4f478b47202da35ac7cda1434eea3b359318227"
+    },
+    "PE": {
+     "arquivo": "snci_PE.geojson.gz",
+     "bbox": [
+      -40.61129985,
+      -9.45525769,
+      -34.84202196,
+      -7.37878071
+     ],
+     "bytes": 140908,
+     "poligonos": 110,
+     "sha256": "1af2eb952c1589d19e156d4422659d343043d7471822e0e366c12eedf142f531"
+    },
+    "PI": {
+     "arquivo": "snci_PI.geojson.gz",
+     "bbox": [
+      -46.08775244,
+      -10.87778767,
+      -40.64903876,
+      -2.95934737
+     ],
+     "bytes": 245004,
+     "poligonos": 562,
+     "sha256": "5a4b29127ed0d0f9d6268ff227433ea798e872373b70d0b7e7134baf4f3afcf8"
+    },
+    "PR": {
+     "arquivo": "snci_PR.geojson.gz",
+     "bbox": [
+      -54.40451877,
+      -26.65562252,
+      -46.78971599,
+      -22.56605934
+     ],
+     "bytes": 2569637,
+     "poligonos": 1986,
+     "sha256": "d3c60b1daf93965731d60663ace12cea7d0e38d5dc2e467a2e8f8b8713150608"
+    },
+    "RJ": {
+     "arquivo": "snci_RJ.geojson.gz",
+     "bbox": [
+      -44.68568804,
+      -23.36665406,
+      -40.99651658,
+      -21.12746541
+     ],
+     "bytes": 144333,
+     "poligonos": 100,
+     "sha256": "d7488b110823b95a3c57f3bf2ba9ab115913c221407c5f816b96a4f6c6515145"
+    },
+    "RN": {
+     "arquivo": "snci_RN.geojson.gz",
+     "bbox": [
+      -38.18213149,
+      -6.73291025,
+      -34.97315937,
+      -4.82089061
+     ],
+     "bytes": 191530,
+     "poligonos": 395,
+     "sha256": "e4d14ebc7581167e47e6c94be50ef0a95596e3909a005fd730c16aa698ff5fa2"
+    },
+    "RO": {
+     "arquivo": "snci_RO.geojson.gz",
+     "bbox": [
+      -66.82378757,
+      -13.69145775,
+      -59.78013773,
+      -7.97579754
+     ],
+     "bytes": 809841,
+     "poligonos": 922,
+     "sha256": "a860fd6590fa17a474f8b13e4d77d2177b4cadd6a8050a53a916bf67145c8585"
+    },
+    "RR": {
+     "arquivo": "snci_RR.geojson.gz",
+     "bbox": [
+      -61.24311064,
+      0.32966096,
+      -60.10248022,
+      3.38137185
+     ],
+     "bytes": 3512,
+     "poligonos": 15,
+     "sha256": "ffacc2851b5b47ff22203c916fe5bdcbeb69b4355981d7c64559ba8b9131f1fd"
+    },
+    "RS": {
+     "arquivo": "snci_RS.geojson.gz",
+     "bbox": [
+      -57.54354704,
+      -33.75084233,
+      -49.82398223,
+      -27.32695931
+     ],
+     "bytes": 1868676,
+     "poligonos": 1870,
+     "sha256": "7625af3a063d6b5d9df2c09bc0558fa3837477f4fb6de074ffbf5e9bff41b372"
+    },
+    "SC": {
+     "arquivo": "snci_SC.geojson.gz",
+     "bbox": [
+      -53.73905347,
+      -29.2932563,
+      -48.61343234,
+      -20.1071573
+     ],
+     "bytes": 594754,
+     "poligonos": 413,
+     "sha256": "6e2f23f86a1813141136b6a75fc3de90070bd876e07c79eb899f57e01af93bf9"
+    },
+    "SE": {
+     "arquivo": "snci_SE.geojson.gz",
+     "bbox": [
+      -38.18939893,
+      -11.54193482,
+      -36.66925693,
+      -10.04984151
+     ],
+     "bytes": 54579,
+     "poligonos": 62,
+     "sha256": "ae89d68c3aeabdb0baec99f715cfec3425641a86089f6cbe28753e52ea57eaeb"
+    },
+    "SEM_UF": {
+     "arquivo": "snci_SEM_UF.geojson.gz",
+     "bbox": [
+      -47.82390686,
+      -15.78991618,
+      -47.80630627,
+      -15.75127614
+     ],
+     "bytes": 3933,
+     "poligonos": 1,
+     "sha256": "2cfe30f5930862262aa846814054df5e988ed113ad90e9cd1c93bf88c59a16a3"
+    },
+    "SP": {
+     "arquivo": "snci_SP.geojson.gz",
+     "bbox": [
+      -52.90125442,
+      -25.20658919,
+      -44.21374667,
+      -19.79711071
+     ],
+     "bytes": 10301825,
+     "poligonos": 10974,
+     "sha256": "980d656b2a63068ab884a9e7e9e3168ab5696254d8419f4db5263231ebb35334"
+    },
+    "TO": {
+     "arquivo": "snci_TO.geojson.gz",
+     "bbox": [
+      -50.20470191,
+      -13.31550021,
+      -45.72171654,
+      -5.2702492
+     ],
+     "bytes": 2138535,
+     "poligonos": 2088,
+     "sha256": "2cf4a4510284c2e2324329ca30d7eb40a16e2a44af4bf8c4686fca1afc240d44"
+    }
+   }
+  },
+  "ucs": {
+   "arquivo_origem": "conservation_unit.shp",
+   "campo_id": "uc_id",
+   "data_arquivo": "2026-03-27",
+   "orgao": "ICMBio",
+   "poligonos": 3121,
+   "titulo": "Unidades de conservação",
+   "ufs": {
+    "AC": {
+     "arquivo": "ucs_AC.geojson.gz",
+     "bbox": [
+      -73.99120677,
+      -11.07059723,
+      -67.77786498,
+      -7.24356186
+     ],
+     "bytes": 514616,
+     "poligonos": 15,
+     "sha256": "f69764e0f0a7c1006c53d048b42f18cce6dc72753046b12d3161ee78e91d3ab8"
+    },
+    "AL": {
+     "arquivo": "ucs_AL.geojson.gz",
+     "bbox": [
+      -38.20645684,
+      -10.50125647,
+      -34.76671265,
+      -8.70442163
+     ],
+     "bytes": 548071,
+     "poligonos": 92,
+     "sha256": "ee6a652c30349545ef52557ea259938843627da8f2505968f1eacb0815fefde7"
+    },
+    "AM": {
+     "arquivo": "ucs_AM.geojson.gz",
+     "bbox": [
+      -71.86596933,
+      -9.60832439,
+      -55.99318559,
+      2.24094737
+     ],
+     "bytes": 3153105,
+     "poligonos": 105,
+     "sha256": "41718eae5f8fa4966d0a52434a3d9634e0a7bbff6ccf1c535b0eae2ba3b1e508"
+    },
+    "AP": {
+     "arquivo": "ucs_AP.geojson.gz",
+     "bbox": [
+      -54.792711,
+      -1.0861208,
+      -49.88123486,
+      4.51864566
+     ],
+     "bytes": 332364,
+     "poligonos": 16,
+     "sha256": "fb32b7192e06fe884369af21f455697ca00abecefcce6038bb6e8ed65292cc89"
+    },
+    "BA": {
+     "arquivo": "ucs_BA.geojson.gz",
+     "bbox": [
+      -47.22922395,
+      -18.33425906,
+      -37.11379384,
+      -8.99406911
+     ],
+     "bytes": 1769807,
+     "poligonos": 296,
+     "sha256": "bb1c01817a49ae6cd9298ecd226afa018971eabba1800b8d54d24225b37b016b"
+    },
+    "CE": {
+     "arquivo": "ucs_CE.geojson.gz",
+     "bbox": [
+      -42.49102447,
+      -7.84667686,
+      -37.23120653,
+      -2.62799993
+     ],
+     "bytes": 1384053,
+     "poligonos": 103,
+     "sha256": "8561270191749d33ed1b9b2d088a6679b0a16621bbcd4c8752fb23d6f4bf9576"
+    },
+    "DF": {
+     "arquivo": "ucs_DF.geojson.gz",
+     "bbox": [
+      -48.29093391,
+      -16.05073355,
+      -47.30813893,
+      -15.1801552
+     ],
+     "bytes": 415453,
+     "poligonos": 38,
+     "sha256": "9acf8bfef039b00d81567c482f4357f54ece3046a4bc2a58d9cc3806a5f566f7"
+    },
+    "ES": {
+     "arquivo": "ucs_ES.geojson.gz",
+     "bbox": [
+      -41.8613633,
+      -23.87211286,
+      -25.29094734,
+      -17.12146524
+     ],
+     "bytes": 656886,
+     "poligonos": 136,
+     "sha256": "dd2a3958c7c6a268bc3063ffdf2fb7dec03d5268f448c37ab5f06a1bf93c6c0d"
+    },
+    "GO": {
+     "arquivo": "ucs_GO.geojson.gz",
+     "bbox": [
+      -53.11890793,
+      -19.15505644,
+      -45.1001274,
+      -12.39482339
+     ],
+     "bytes": 905537,
+     "poligonos": 160,
+     "sha256": "24838bc5088ad24984966958b020f148f1fe47bfca65b53786e04e353d96a407"
+    },
+    "MA": {
+     "arquivo": "ucs_MA.geojson.gz",
+     "bbox": [
+      -47.86905479,
+      -10.46487306,
+      -41.13829904,
+      -0.21664458
+     ],
+     "bytes": 296637,
+     "poligonos": 38,
+     "sha256": "5d1cf768f56bfc56f9d5f867c935df8947ac2dac2da5c22fc35fafed4d234773"
+    },
+    "MG": {
+     "arquivo": "ucs_MG.geojson.gz",
+     "bbox": [
+      -49.86699363,
+      -22.92128211,
+      -39.90658927,
+      -14.46328412
+     ],
+     "bytes": 1859160,
+     "poligonos": 339,
+     "sha256": "c77ad0c38380c523aa1b86a71c40ca556d7e152a48b9bf51d862184496c329de"
+    },
+    "MS": {
+     "arquivo": "ucs_MS.geojson.gz",
+     "bbox": [
+      -57.69418868,
+      -24.08540583,
+      -51.19513343,
+      -17.18859499
+     ],
+     "bytes": 1000435,
+     "poligonos": 97,
+     "sha256": "8a830331a1f3c48433fa046fa3773c0842d1ddbe77034777ca7721c2ea51d9f9"
+    },
+    "MT": {
+     "arquivo": "ucs_MT.geojson.gz",
+     "bbox": [
+      -62.10042164,
+      -17.86365858,
+      -50.12922913,
+      -6.88187482
+     ],
+     "bytes": 550128,
+     "poligonos": 98,
+     "sha256": "b479c0943f0efd30d17e3763634633299b4de0496673a0c14c5dd24a52fd8e80"
+    },
+    "PA": {
+     "arquivo": "ucs_PA.geojson.gz",
+     "bbox": [
+      -58.89561481,
+      -9.37415143,
+      -46.07206331,
+      3.50897707
+     ],
+     "bytes": 4084687,
+     "poligonos": 98,
+     "sha256": "616b472fc13fa08c7cdd7f27cb055ff52dc7a95e52b0e9d9e745c5aaed48f191"
+    },
+    "PB": {
+     "arquivo": "ucs_PB.geojson.gz",
+     "bbox": [
+      -38.26632212,
+      -8.30008327,
+      -34.49204151,
+      -6.48266882
+     ],
+     "bytes": 80993,
+     "poligonos": 32,
+     "sha256": "9804d4286332c4e4de31bce124a7b188821737907a4d9e3696e7181c699eb662"
+    },
+    "PE": {
+     "arquivo": "ucs_PE.geojson.gz",
+     "bbox": [
+      -40.88548686,
+      -9.82814557,
+      -29.26690918,
+      0.96630341
+     ],
+     "bytes": 906202,
+     "poligonos": 117,
+     "sha256": "b8c9128261938f95287973b59de49ded962839eb3fdb2310ff25b2aa356b3ced"
+    },
+    "PI": {
+     "arquivo": "ucs_PI.geojson.gz",
+     "bbox": [
+      -46.71865359,
+      -10.46487306,
+      -39.01688274,
+      -2.62799993
+     ],
+     "bytes": 692445,
+     "poligonos": 34,
+     "sha256": "c8db0463167a0865b9edf28a7189da64e7856a5d9f9414046f4783ea38ed9d82"
+    },
+    "PR": {
+     "arquivo": "ucs_PR.geojson.gz",
+     "bbox": [
+      -54.48743365,
+      -26.59162065,
+      -48.02352344,
+      -22.27037513
+     ],
+     "bytes": 1646267,
+     "poligonos": 108,
+     "sha256": "1d009141b9fbd424876e719d301393f86867da2b773cc8f420fbea979709ddcb"
+    },
+    "RJ": {
+     "arquivo": "ucs_RJ.geojson.gz",
+     "bbox": [
+      -45.81993437,
+      -23.37807177,
+      -40.974474,
+      -20.8635764
+     ],
+     "bytes": 6784773,
+     "poligonos": 504,
+     "sha256": "686c815f9c534d793abcacad546a823d96219ea0fc8b286cac0e5358a76bed94"
+    },
+    "RN": {
+     "arquivo": "ucs_RN.geojson.gz",
+     "bbox": [
+      -37.93294831,
+      -6.86567501,
+      -26.01447213,
+      4.27012048
+     ],
+     "bytes": 122447,
+     "poligonos": 27,
+     "sha256": "f810e0d1b9f9a1490e32d4e0410bbaceb94df0d2909558aaa0619ccfe3ef6cb5"
+    },
+    "RO": {
+     "arquivo": "ucs_RO.geojson.gz",
+     "bbox": [
+      -65.68132216,
+      -13.53756711,
+      -60.4282102,
+      -7.39888968
+     ],
+     "bytes": 2059465,
+     "poligonos": 82,
+     "sha256": "e13259dd7d97e25ea2d1d20fad14906025cdcb809682074bab1714d699740c86"
+    },
+    "RR": {
+     "arquivo": "ucs_RR.geojson.gz",
+     "bbox": [
+      -62.53763891,
+      -1.59097222,
+      -60.09123389,
+      5.27191035
+     ],
+     "bytes": 375264,
+     "poligonos": 14,
+     "sha256": "2e9d38e536330ea537318847fb8b2eba113ccb8bacc051ec6c2d8dffcd131553"
+    },
+    "RS": {
+     "arquivo": "ucs_RS.geojson.gz",
+     "bbox": [
+      -57.55703815,
+      -32.93031093,
+      -49.69866751,
+      -27.12692872
+     ],
+     "bytes": 640656,
+     "poligonos": 101,
+     "sha256": "4da9d970c4a94db4216f3308cebabfdc4c453350b9d02b28bdb99d855793f2fb"
+    },
+    "SC": {
+     "arquivo": "ucs_SC.geojson.gz",
+     "bbox": [
+      -53.72449735,
+      -29.2578997,
+      -48.30881572,
+      -25.53896359
+     ],
+     "bytes": 908109,
+     "poligonos": 179,
+     "sha256": "0535bd727253ea6c7f3ea695f5475a237508a0c02e41f78a5d3e70f3be4449cc"
+    },
+    "SE": {
+     "arquivo": "ucs_SE.geojson.gz",
+     "bbox": [
+      -38.20645684,
+      -11.34754843,
+      -36.52974638,
+      -9.37340265
+     ],
+     "bytes": 43530,
+     "poligonos": 16,
+     "sha256": "bec94c8cedcf34386fc00886dcdab26c574584935a981064b4f7b31a92dadf94"
+    },
+    "SP": {
+     "arquivo": "ucs_SP.geojson.gz",
+     "bbox": [
+      -54.37873607,
+      -25.49347001,
+      -44.1878477,
+      -19.92069639
+     ],
+     "bytes": 4278186,
+     "poligonos": 291,
+     "sha256": "cb2e82a2b477dda9c4976319cafc04c24127c7b7f0c2a8da1e94880962711d00"
+    },
+    "TO": {
+     "arquivo": "ucs_TO.geojson.gz",
+     "bbox": [
+      -50.91504891,
+      -13.73827998,
+      -45.17913682,
+      -5.29040997
+     ],
+     "bytes": 467638,
+     "poligonos": 34,
+     "sha256": "c9293bd7686c3b6a2c7efc16b43d8c680c163346e884e9d548744232ee0d01c5"
+    }
+   }
+  }
+ },
+ "casas_decimais": 8,
+ "crs": "EPSG:4674",
+ "formato": 1,
+ "gerado_em": "2026-10-05T21:47:24-03:00"
+}

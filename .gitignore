@@ -1,0 +1,4 @@
+entrada/
+*.zip
+__pycache__/
+.pytest_cache/
