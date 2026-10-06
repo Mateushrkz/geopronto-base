@@ -1000,6 +1000,7 @@
    "arquivo_origem": "conservation_unit.shp",
    "campo_id": "uc_id",
    "data_arquivo": "2026-03-27",
+   "data_referencia": "2025-09",
    "orgao": "ICMBio",
    "poligonos": 3121,
    "titulo": "Unidades de conservação",
@@ -1334,5 +1335,5 @@
  "casas_decimais": 8,
  "crs": "EPSG:4674",
  "formato": 1,
- "gerado_em": "2026-10-05T21:47:24-03:00"
+ "gerado_em": "2026-10-05T21:55:37-03:00"
 }

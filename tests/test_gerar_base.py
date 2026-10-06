@@ -104,6 +104,8 @@ def test_uc_em_dois_estados_vai_para_os_dois(pastas):
     assert [f["properties"]["uc_id"] for f in mg["features"]] == ["11"]
     ind = _indice(saida)["camadas"]["ucs"]
     assert ind["campo_id"] == "uc_id" and ind["poligonos"] == 2   # 2 UCs, mesmo aparecendo 3 vezes
+    assert ind["data_referencia"] == "2025-09"                    # janela mostra «ICMBio 09/2025»
+    assert ind["data_arquivo"] == "2026-10-05"                    # a do zip continua registrada
 
 
 def test_indice_confere_com_os_arquivos(pastas):

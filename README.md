@@ -43,6 +43,7 @@ O programa lê o índice primeiro e baixa só os arquivos cujo `bbox` encosta na
 ```
 
 - `data_arquivo`: data do arquivo de dentro do zip, que no Acervo é o dia do download.
+- `data_referencia`, quando existe, é a data que a janela mostra no lugar da `data_arquivo`. Hoje só as UCs têm, com `2025-09` («ICMBio 09/2025»). Ela fica no `gerar_base.py` e precisa ser trocada quando o arquivo das UCs mudar.
 - `sha256`: o programa confere o arquivo baixado.
 
 ## Atualização do mês

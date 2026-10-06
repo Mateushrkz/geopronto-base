@@ -103,8 +103,10 @@ CAMADAS = {
                       "uf": _uf_campo("uf")},
     "quilombolas": {"achar": "quilombola", "titulo": "Áreas quilombolas", "orgao": "Incra",
                     "uf": _uf_campo("cd_uf")},
+    # data_referencia: a data que a janela mostra («ICMBio 09/2025»), decidida
+    # por Mateus em 05/10/2026 — trocar aqui quando trocar o arquivo das UCs
     "ucs": {"achar": "conservation_unit", "titulo": "Unidades de conservação", "orgao": "ICMBio",
-            "uf": _uf_nomes("state_name"), "campo_id": "uc_id"},
+            "uf": _uf_nomes("state_name"), "campo_id": "uc_id", "data_referencia": "2025-09"},
     "biomas": {"achar": "bioma", "titulo": "Biomas", "orgao": "IBGE", "uf": _nacional},
 }
 
@@ -261,6 +263,8 @@ def gerar_camada(camada: str, fonte: Fonte, saida: str) -> dict:
                "data_arquivo": fonte.data.isoformat(), "poligonos": total, "ufs": arquivos}
     if cfg.get("campo_id"):
         entrada["campo_id"] = cfg["campo_id"]
+    if cfg.get("data_referencia"):
+        entrada["data_referencia"] = cfg["data_referencia"]
     return entrada
 
 
