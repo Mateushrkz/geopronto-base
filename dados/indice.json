@@ -651,6 +651,341 @@
     }
    }
   },
+  "rodovias": {
+   "arquivo_origem": "SNV_202607A.shp",
+   "campo_id": "vl_codigo",
+   "data_arquivo": "2026-07-27",
+   "data_referencia": "2026-07",
+   "orgao": "DNIT",
+   "poligonos": 7673,
+   "titulo": "Rodovias",
+   "ufs": {
+    "AC": {
+     "arquivo": "rodovias_AC.geojson.gz",
+     "bbox": [
+      -73.7050736,
+      -11.03687562,
+      -66.80216619,
+      -7.50545972
+     ],
+     "bytes": 636712,
+     "poligonos": 64,
+     "sha256": "2770c9c5fb8dca43ae0615f37059a095d255e96a7c5a5211a8740aa3c053fdb5"
+    },
+    "AL": {
+     "arquivo": "rodovias_AL.geojson.gz",
+     "bbox": [
+      -38.20298219,
+      -10.31172289,
+      -35.62885888,
+      -8.87972087
+     ],
+     "bytes": 527597,
+     "poligonos": 124,
+     "sha256": "2f1c3057b7abb5769f8c02f2f6b82c2669c8c3afc9792ae9ba17a85651ee0c10"
+    },
+    "AM": {
+     "arquivo": "rodovias_AM.geojson.gz",
+     "bbox": [
+      -72.83224895,
+      -9.59568789,
+      -58.2370251,
+      1.50436708
+     ],
+     "bytes": 1470647,
+     "poligonos": 235,
+     "sha256": "0d3fa620372d3385553fcb77a1b5bcf5324ee102c7e9c35fba78900c2ec07e48"
+    },
+    "AP": {
+     "arquivo": "rodovias_AP.geojson.gz",
+     "bbox": [
+      -53.98704352,
+      -0.85724258,
+      -50.86082363,
+      3.85866859
+     ],
+     "bytes": 423823,
+     "poligonos": 38,
+     "sha256": "a7ede29aacf75c73dfbec0fa1920195cd05ce368a3e0f1293a2f96cbcef1ccf9"
+    },
+    "BA": {
+     "arquivo": "rodovias_BA.geojson.gz",
+     "bbox": [
+      -46.33973113,
+      -18.17508431,
+      -37.74055274,
+      -8.62610883
+     ],
+     "bytes": 4675089,
+     "poligonos": 674,
+     "sha256": "5efc340306009e8f21bfb345527f853045d8e609bf653f9eabb13c14c7de4098"
+    },
+    "CE": {
+     "arquivo": "rodovias_CE.geojson.gz",
+     "bbox": [
+      -41.25525915,
+      -7.85968924,
+      -37.44714936,
+      -2.88389882
+     ],
+     "bytes": 1461511,
+     "poligonos": 223,
+     "sha256": "75a5e560e9020ea7395b9763be06d4cd26e7ce0886adef16fc33cf9bed074f24"
+    },
+    "DF": {
+     "arquivo": "rodovias_DF.geojson.gz",
+     "bbox": [
+      -48.25975607,
+      -16.05211356,
+      -47.31860036,
+      -15.50038204
+     ],
+     "bytes": 213382,
+     "poligonos": 128,
+     "sha256": "aba5ef7aa96c5248f7d72dd97c99bff298cb92f869640e0d9f20169e82dad385"
+    },
+    "ES": {
+     "arquivo": "rodovias_ES.geojson.gz",
+     "bbox": [
+      -41.85021689,
+      -21.22244374,
+      -39.85969779,
+      -18.02336628
+     ],
+     "bytes": 811691,
+     "poligonos": 147,
+     "sha256": "c5d180bd62f2e8e5db070e288fefb9a994ac3e5e1fd204ce609b800c0474dd57"
+    },
+    "GO": {
+     "arquivo": "rodovias_GO.geojson.gz",
+     "bbox": [
+      -53.2119012,
+      -19.30802226,
+      -46.01564362,
+      -12.83535373
+     ],
+     "bytes": 2428781,
+     "poligonos": 395,
+     "sha256": "ed6dc83fa6f131b128b3a73f2ca34e98d675daddb140483efb3dd02bb32a1f30"
+    },
+    "MA": {
+     "arquivo": "rodovias_MA.geojson.gz",
+     "bbox": [
+      -47.55902522,
+      -9.14455626,
+      -41.90118053,
+      -1.21842076
+     ],
+     "bytes": 1984445,
+     "poligonos": 203,
+     "sha256": "25b005b76f207295a449e6c59074baac6c2582e64692bf941b25b8b4f1f5bcb0"
+    },
+    "MG": {
+     "arquivo": "rodovias_MG.geojson.gz",
+     "bbox": [
+      -51.01745125,
+      -22.87924797,
+      -39.94311856,
+      -14.31080436
+     ],
+     "bytes": 8675620,
+     "poligonos": 947,
+     "sha256": "51042abe56e44dcf106cffa1e8a958bc2537f5844e593064c88f990b136d4202"
+    },
+    "MS": {
+     "arquivo": "rodovias_MS.geojson.gz",
+     "bbox": [
+      -57.93495009,
+      -24.0444866,
+      -50.99230071,
+      -17.52108343
+     ],
+     "bytes": 2021342,
+     "poligonos": 278,
+     "sha256": "c55f76c0fddffed03319f1f1f435ce2f00f75a1aef66432cd3e9fdd099489ed4"
+    },
+    "MT": {
+     "arquivo": "rodovias_MT.geojson.gz",
+     "bbox": [
+      -60.2073569,
+      -17.52108343,
+      -50.59393883,
+      -8.79818058
+     ],
+     "bytes": 2637907,
+     "poligonos": 349,
+     "sha256": "9bc89dbc47f2513e59352fb1833cf7c61dd2083ab950ec75af0102bcbb617493"
+    },
+    "PA": {
+     "arquivo": "rodovias_PA.geojson.gz",
+     "bbox": [
+      -58.89672158,
+      -9.74978016,
+      -46.13652227,
+      2.41431054
+     ],
+     "bytes": 3006101,
+     "poligonos": 252,
+     "sha256": "4d930fd7621a675584473e7deb05a7680e86f717a6c1c02833870a88b613f452"
+    },
+    "PB": {
+     "arquivo": "rodovias_PB.geojson.gz",
+     "bbox": [
+      -38.75218126,
+      -7.95243171,
+      -34.82811631,
+      -6.11263533
+     ],
+     "bytes": 1024270,
+     "poligonos": 206,
+     "sha256": "31743c9bb100826250fa26b13df2f762f8866b3f723529214470ba9f54c4e52a"
+    },
+    "PE": {
+     "arquivo": "rodovias_PE.geojson.gz",
+     "bbox": [
+      -41.04938564,
+      -9.46711789,
+      -32.40022031,
+      -3.83508625
+     ],
+     "bytes": 1536399,
+     "poligonos": 207,
+     "sha256": "6636805ef73cc1de9ed5fd32062bb6ec48d28836761166dfab5ee0f4f3d89709"
+    },
+    "PI": {
+     "arquivo": "rodovias_PI.geojson.gz",
+     "bbox": [
+      -45.92581385,
+      -10.83907781,
+      -40.45840039,
+      -2.88184235
+     ],
+     "bytes": 2040445,
+     "poligonos": 278,
+     "sha256": "979b3ddeeb6ca62ac76f9fbb262a3d01b6d04e50c3de1e1670b0ae3b5a42a38e"
+    },
+    "PR": {
+     "arquivo": "rodovias_PR.geojson.gz",
+     "bbox": [
+      -54.60381466,
+      -26.61209597,
+      -48.1890006,
+      -22.55665455
+     ],
+     "bytes": 2731803,
+     "poligonos": 588,
+     "sha256": "cdfcdbbefcd68e3298627e44b5c708e21965e4e2679453d07ddca0a66411b578"
+    },
+    "RJ": {
+     "arquivo": "rodovias_RJ.geojson.gz",
+     "bbox": [
+      -44.84024874,
+      -23.35118763,
+      -41.0191998,
+      -21.13525368
+     ],
+     "bytes": 1220832,
+     "poligonos": 290,
+     "sha256": "8173e4f0439ffc01b36d7595424c5d8ef46814ab96638443e3684c6fc08309b0"
+    },
+    "RN": {
+     "arquivo": "rodovias_RN.geojson.gz",
+     "bbox": [
+      -38.37362861,
+      -6.70689516,
+      -35.10975129,
+      -4.87993923
+     ],
+     "bytes": 1034294,
+     "poligonos": 207,
+     "sha256": "763f1e5e5217804ec1f5fc6a54f4f8fc057818fb51d2102a5ccbcc289ccd71c6"
+    },
+    "RO": {
+     "arquivo": "rodovias_RO.geojson.gz",
+     "bbox": [
+      -66.80216619,
+      -13.48356124,
+      -59.81791015,
+      -7.9537506
+     ],
+     "bytes": 1124155,
+     "poligonos": 137,
+     "sha256": "8a1a836cb601716e169a24f7fe1fd140f3c851e0bdd015298d09596257f48202"
+    },
+    "RR": {
+     "arquivo": "rodovias_RR.geojson.gz",
+     "bbox": [
+      -62.74931302,
+      -0.85927885,
+      -58.89672158,
+      4.48259898
+     ],
+     "bytes": 908124,
+     "poligonos": 151,
+     "sha256": "189df68bc1b15fe2aab2eef84762521c9d3e5f73a7c88c8d19acd199ce431138"
+    },
+    "RS": {
+     "arquivo": "rodovias_RS.geojson.gz",
+     "bbox": [
+      -57.55751231,
+      -33.69308136,
+      -49.7273499,
+      -27.16901885
+     ],
+     "bytes": 3667407,
+     "poligonos": 582,
+     "sha256": "d46d421f8e61239cd9de13ad517ececfed21e716b24b94bd6884e9bf4edc3677"
+    },
+    "SC": {
+     "arquivo": "rodovias_SC.geojson.gz",
+     "bbox": [
+      -53.7340525,
+      -29.29907669,
+      -48.57197985,
+      -25.98164197
+     ],
+     "bytes": 1651667,
+     "poligonos": 306,
+     "sha256": "999fc9fa0ec1edfc9466a7a71abcb6a167e2ca02954d22577319360558be2668"
+    },
+    "SE": {
+     "arquivo": "rodovias_SE.geojson.gz",
+     "bbox": [
+      -38.02058945,
+      -11.52013831,
+      -36.58243784,
+      -10.20672493
+     ],
+     "bytes": 362236,
+     "poligonos": 85,
+     "sha256": "cd37e9e1b06cf9190e9138305c69971548c81f829e0c98d656ca2c547c85cca8"
+    },
+    "SP": {
+     "arquivo": "rodovias_SP.geojson.gz",
+     "bbox": [
+      -52.16058672,
+      -25.11921618,
+      -44.70006175,
+      -19.97784365
+     ],
+     "bytes": 825296,
+     "poligonos": 416,
+     "sha256": "1127b6d57a2c463c6a4f86e13efad53621f286ab271a2d5326b164a84e413315"
+    },
+    "TO": {
+     "arquivo": "rodovias_TO.geojson.gz",
+     "bbox": [
+      -50.65819846,
+      -13.19606437,
+      -46.33973113,
+      -5.711791
+     ],
+     "bytes": 1106172,
+     "poligonos": 163,
+     "sha256": "54d276109687dc8b9493663f876587981d12bdcf94057159c6078ae5d1c761fa"
+    }
+   }
+  },
   "snci": {
    "arquivo_origem": "Imóvel certificado SNCI Brasil.shp",
    "data_arquivo": "2026-10-05",
@@ -1335,5 +1670,5 @@
  "casas_decimais": 8,
  "crs": "EPSG:4674",
  "formato": 1,
- "gerado_em": "2026-10-05T21:55:37-03:00"
+ "gerado_em": "2026-10-07T09:27:44-03:00"
 }

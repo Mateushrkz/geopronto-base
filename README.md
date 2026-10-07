@@ -12,6 +12,11 @@ Arquivos que a janela **«Confrontantes – base online»** do GeoPronto baixa q
 | Áreas quilombolas | `quilombolas_<UF>.geojson.gz` | Incra | Acervo Fundiário → Exportar shapefile | todo mês |
 | Unidades de conservação | `ucs_<UF>.geojson.gz` | ICMBio | `conservation_unit` | quando sair versão nova |
 | Biomas | `biomas_BR.geojson.gz` | IBGE | `lml_bioma_e250k` (1:250.000) | quando sair versão nova |
+| Rodovias | `rodovias_<UF>.geojson.gz` | DNIT | SNV – Sistema Nacional de Viação (`SNV_AAAAMMx`, linhas no eixo) | quando sair versão nova do SNV |
+
+### Rodovias (DNIT)
+
+Fonte: **DNIT – Sistema Nacional de Viação (SNV), versão 202607A**, baixado do site do DNIT (Atlas e Mapas → PNV e SNV). O site do DNIT publica o seu conteúdo sob a licença **Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)**. Por isso os arquivos `rodovias_<UF>.geojson.gz` trazem o dado **sem alteração**: só a mudança de formato (shapefile → GeoJSON, um arquivo por estado) e o arredondamento a 8 casas descrito abaixo. Nenhum ponto foi tirado e nenhum registro foi apagado.
 
 ## Formato
 
@@ -20,6 +25,7 @@ Arquivos que a janela **«Confrontantes – base online»** do GeoPronto baixa q
 - **Atributos:** exatamente como vêm no arquivo do órgão. Só as datas viram `AAAA-MM-DD`.
 - **Polígono sem geometria no arquivo de origem:** fica de fora.
 - **SNCI sem estado no campo `uf_municip`:** vai para `snci_SEM_UF.geojson.gz`.
+- **Rodovias:** linhas no **eixo** da rodovia, um trecho por registro, estado pelo campo `sg_uf`, sem tirar nada. Vão também as BRs **planejadas** (`ds_superfi = PLA`) e os trechos **coincidentes** (`desc_coinc = Coinc`, a mesma pista com outro número de BR). Quem decide o que aparece é o programa: planejada sem estrada por baixo não aparece; planejada sobre estrada que existe (`est_coinc`, ex.: GO-118) aparece com o nome da estrada; trecho coincidente aparece uma vez só. A versão (`data_referencia`) sai do nome do arquivo: `SNV_202607A` → `2026-07`. O arquivo **não traz a faixa de domínio**.
 - **UC em mais de um estado:** vai para o arquivo de cada estado (campo `state_name`). O programa junta pelo `campo_id` (`uc_id`).
 - **Estado de cada polígono:** é o que o órgão escreveu no campo de estado (`uf_municip`, `uf`, `cd_uf`), e isso nem sempre é onde o polígono está. Exemplo: 205 assentamentos marcados `DF` ficam no Entorno, em GO e MG. Por isso **o programa escolhe os arquivos pelo `bbox` de cada arquivo no índice, e não pelo nome do estado.** Assim nenhum polígono fica de fora.
 
@@ -57,7 +63,7 @@ O programa lê o índice primeiro e baixa só os arquivos cujo `bbox` encosta na
 4. Confira a quantidade de polígonos que aparece na tela.
 5. Suba a pasta `dados/` para o GitHub.
 
-**Camada que não estiver na pasta continua como estava.** Por isso o SNCI, as UCs e os biomas não precisam ser baixados de novo. Arquivo que não mudou sai com os mesmos bytes, então não cria versão nova no GitHub.
+**Camada que não estiver na pasta continua como estava.** Por isso o SNCI, as UCs, os biomas e as rodovias não precisam ser baixados de novo. Saiu SNV novo no site do DNIT: ponha o zip na pasta e rode o mesmo comando. Arquivo que não mudou sai com os mesmos bytes, então não cria versão nova no GitHub.
 
 ## Trava
 

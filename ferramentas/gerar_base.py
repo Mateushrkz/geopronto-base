@@ -13,6 +13,7 @@ extraídos. Cada camada é reconhecida pelo nome do .shp:
     Quilombolas     «Áreas de Quilombolas»             (Incra – Acervo Fundiário)
     UCs             «conservation_unit»                (ICMBio)
     Biomas          «lml_bioma_e250k_…»                (IBGE)
+    Rodovias        «SNV_AAAAMMx»                      (DNIT – Sistema Nacional de Viação)
 
 Camada que não estiver na pasta fica como estava no índice — no mês a mês
 basta pôr na pasta só o que foi baixado de novo (assentamentos e quilombolas).
@@ -39,6 +40,7 @@ import hashlib
 import io
 import json
 import os
+import re
 import sys
 import unicodedata
 import zipfile
@@ -108,7 +110,19 @@ CAMADAS = {
     "ucs": {"achar": "conservation_unit", "titulo": "Unidades de conservação", "orgao": "ICMBio",
             "uf": _uf_nomes("state_name"), "campo_id": "uc_id", "data_referencia": "2025-09"},
     "biomas": {"achar": "bioma", "titulo": "Biomas", "orgao": "IBGE", "uf": _nacional},
+    # SNV do DNIT (07/10/2026): eixo das rodovias, um trecho por registro, com
+    # a UF em «sg_uf». Vai inteiro, como os outros — inclusive as BRs
+    # planejadas e os trechos coincidentes; quem decide o que aparece é o
+    # programa. data_referencia sai do nome do arquivo (SNV_202607A -> 2026-07).
+    "rodovias": {"achar": "snv", "titulo": "Rodovias", "orgao": "DNIT",
+                 "uf": _uf_campo("sg_uf"), "campo_id": "vl_codigo", "referencia_do_nome": True},
 }
+
+
+def _referencia_do_nome(nome_shp: str):
+    """«SNV_202607A.shp» -> «2026-07» (a versão do SNV é o ano e o mês)."""
+    m = re.search(r"(20\d{2})(0[1-9]|1[0-2])", nome_shp or "")
+    return "%s-%s" % (m.group(1), m.group(2)) if m else None
 
 
 # ----------------------------------------------------------------- leitura
@@ -265,6 +279,8 @@ def gerar_camada(camada: str, fonte: Fonte, saida: str) -> dict:
         entrada["campo_id"] = cfg["campo_id"]
     if cfg.get("data_referencia"):
         entrada["data_referencia"] = cfg["data_referencia"]
+    elif cfg.get("referencia_do_nome") and _referencia_do_nome(fonte.nome_shp):
+        entrada["data_referencia"] = _referencia_do_nome(fonte.nome_shp)
     return entrada
 
 

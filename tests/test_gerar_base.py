@@ -166,3 +166,46 @@ def test_camada_repetida_na_pasta_para_com_erro(pastas):
     _snci(os.path.join(entrada, "copia"))
     with pytest.raises(ValueError):
         gb.gerar(entrada, saida, agora="a", log=lambda *a: None)
+
+
+# ----------------------------------------------------------------- rodovias (SNV do DNIT)
+def _snv(pasta, nome_base="SNV_202607A"):
+    """Shapefile de LINHAS em UTF-8 (com .cpg), como o DNIT entrega o SNV."""
+    shp, shx, dbf = io.BytesIO(), io.BytesIO(), io.BytesIO()
+    w = shapefile.Writer(shp=shp, shx=shx, dbf=dbf, shapeType=shapefile.POLYLINE, encoding="utf-8")
+    for nome, tam in (("vl_br", 3), ("sg_uf", 2), ("vl_codigo", 20), ("ds_superfi", 10),
+                      ("est_coinc", 20), ("ds_local_i", 60)):
+        w.field(nome, "C", size=tam)
+    linhas = [([[-49.123456789123, -16.5], [-49.0, -16.4]], ("153", "GO", "153BGO0010", "DUP", "", "ENTR GO-060 (GOIÂNIA)")),
+              ([[-48.9, -16.3], [-48.8, -16.2]], ("010", "GO", "010BGO0090", "PLA", "GO-118", "DIV DF/GO")),
+              ([[-44.0, -19.9], [-43.9, -19.8]], ("040", "MG", "040BMG0010", "PAV", "", "BELO HORIZONTE"))]
+    for pts, valores in linhas:
+        w.line([pts])
+        w.record(*valores)
+    w.close()
+    with zipfile.ZipFile(os.path.join(pasta, "%s.zip" % nome_base), "w") as z:
+        for ext, dado in (("shp", shp.getvalue()), ("shx", shx.getvalue()), ("dbf", dbf.getvalue()),
+                          ("cpg", b"UTF-8")):
+            z.writestr(zipfile.ZipInfo("%s.%s" % (nome_base, ext), date_time=DATA_ZIP), dado)
+
+
+def test_rodovias_do_snv_por_estado_com_a_versao_do_nome(pastas):
+    entrada, saida = pastas
+    _snv(entrada)
+    gb.gerar(entrada, saida, agora="a", log=lambda *a: None)
+    ind = _indice(saida)["camadas"]["rodovias"]
+    assert ind["orgao"] == "DNIT" and ind["campo_id"] == "vl_codigo"
+    assert ind["data_referencia"] == "2026-07"                  # SNV_202607A
+    assert sorted(ind["ufs"]) == ["GO", "MG"] and ind["poligonos"] == 3
+    go = _ler(saida, "rodovias_GO.geojson.gz")["features"]
+    assert [f["geometry"]["type"] for f in go] == ["LineString", "LineString"]
+    assert go[0]["geometry"]["coordinates"][0] == [-49.12345679, -16.5]       # 8 casas
+    assert go[0]["properties"]["ds_local_i"] == "ENTR GO-060 (GOIÂNIA)"        # UTF-8 do .cpg
+    # a BR planejada vai inteira, como veio: o programa é que decide o que mostrar
+    assert go[1]["properties"]["ds_superfi"] == "PLA" and go[1]["properties"]["est_coinc"] == "GO-118"
+
+
+def test_versao_do_snv_sai_do_nome_do_arquivo():
+    assert gb._referencia_do_nome("SNV_202607A.shp") == "2026-07"
+    assert gb._referencia_do_nome("SNV_202612B.shp") == "2026-12"
+    assert gb._referencia_do_nome("rodovias.shp") is None
