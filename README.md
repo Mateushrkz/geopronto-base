@@ -1,7 +1,7 @@
 # geopronto-base
 Bases oficiais públicas usadas pelo GeoPronto
 
-Arquivos que a janela **«Confrontantes – base online»** do GeoPronto baixa quando precisa. São dados públicos dos órgãos, sem nenhuma alteração além do formato e do arredondamento descrito abaixo. Este repositório não tem licença própria: os dados continuam sendo dos órgãos de origem (Lei 14.129/2021, art. 29). SIGEF, CAR e Terras indígenas **não** ficam aqui, porque o programa consulta esses dados na hora, direto no Incra, no SICAR e na FUNAI.
+Arquivos que a janela **«Confrontantes – base online»** do GeoPronto baixa quando precisa. São dados públicos dos órgãos, sem nenhuma alteração além do formato e do arredondamento descrito abaixo — a exceção são **Rios e córregos** e **Bacias hidrográficas**, que têm o traçado simplificado (ver as seções deles). Este repositório não tem licença própria: os dados continuam sendo dos órgãos de origem (Lei 14.129/2021, art. 29). SIGEF, CAR e Terras indígenas **não** ficam aqui, porque o programa consulta esses dados na hora, direto no Incra, no SICAR e na FUNAI.
 
 ## Camadas
 
@@ -13,10 +13,20 @@ Arquivos que a janela **«Confrontantes – base online»** do GeoPronto baixa q
 | Unidades de conservação | `ucs_<UF>.geojson.gz` | ICMBio | `conservation_unit` | quando sair versão nova |
 | Biomas | `biomas_BR.geojson.gz` | IBGE | `lml_bioma_e250k` (1:250.000) | quando sair versão nova |
 | Rodovias | `rodovias_<UF>.geojson.gz` | DNIT | SNV – Sistema Nacional de Viação (`SNV_AAAAMMx`, linhas no eixo) | quando sair versão nova do SNV |
+| Rios e córregos | `rios_<quadrado de 1°>.geojson.gz` | ANA | BHO 2017 5k – trechos de drenagem | parada (BHO 2017) |
+| Bacias hidrográficas | `bacias_<mesorregião>.geojson.gz` | IBGE | DHN250 2021 – `micro_RH` | quando sair versão nova |
 
 ### Rodovias (DNIT)
 
 Fonte: **DNIT – Sistema Nacional de Viação (SNV), versão 202607A**, baixado do site do DNIT (Atlas e Mapas → PNV e SNV). O site do DNIT publica o seu conteúdo sob a licença **Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)**. Por isso os arquivos `rodovias_<UF>.geojson.gz` trazem o dado **sem alteração**: só a mudança de formato (shapefile → GeoJSON, um arquivo por estado) e o arredondamento a 8 casas descrito abaixo. Nenhum ponto foi tirado e nenhum registro foi apagado.
+
+### Bacias hidrográficas (IBGE)
+
+Fonte: **IBGE – Divisão Hidrográfica Nacional (DHN250), 2021**, arquivo `micro_RH` (302 microrregiões hidrográficas; cada uma traz também o nome da meso e da macrorregião). Gerado por `ferramentas/gerar_bacias.py`:
+
+- **um arquivo por mesorregião** (54), com as micros dela; campos curtos `cd` (código da micro), `micro`, `meso`, `macro` (como o IBGE grava, em maiúsculas) e `area` (km², do IBGE);
+- traçado **simplificado** com simplificação de cobertura (a divisa comum de duas bacias continua a mesma linha nas duas) a ~22 m — o original tem um ponto a cada ~99 m, escala 1:250.000; nenhuma bacia perdeu pedaço e a área muda menos de 0,02%;
+- coordenadas com 6 casas decimais (~0,1 m).
 
 ## Formato
 
