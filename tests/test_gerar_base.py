@@ -209,3 +209,39 @@ def test_versao_do_snv_sai_do_nome_do_arquivo():
     assert gb._referencia_do_nome("SNV_202607A.shp") == "2026-07"
     assert gb._referencia_do_nome("SNV_202612B.shp") == "2026-12"
     assert gb._referencia_do_nome("rodovias.shp") is None
+
+
+# ----------------------------------------------------------------- ferrovias (Ministério dos Transportes)
+def _baseferro(pasta):
+    """Shapefile de LINHAS em UTF-8 (com .cpg), como o BIT entrega a BaseFerro."""
+    shp, shx, dbf = io.BytesIO(), io.BytesIO(), io.BytesIO()
+    w = shapefile.Writer(shp=shp, shx=shx, dbf=dbf, shapeType=shapefile.POLYLINE, encoding="utf-8")
+    w.field("id", "N", size=10)
+    for nome, tam in (("tip_situac", 80), ("sigla", 30), ("nome", 254), ("uf", 254)):
+        w.field(nome, "C", size=tam)
+    linhas = [([[-49.123456789123, -16.5], [-49.0, -16.4]], (1, "Em Operação", "EF-151", "Rumo Malha Central - RMC", "GO")),
+              ([[-48.9, -16.3], [-48.8, -16.2]], (2, "Planejada", "Sem Info", "", "GO")),
+              ([[-44.0, -19.9], [-43.9, -19.8]], (3, "Desativada", "Sem Info", "", "MG"))]
+    for pts, valores in linhas:
+        w.line([pts])
+        w.record(*valores)
+    w.close()
+    with zipfile.ZipFile(os.path.join(pasta, "BaseFerro.zip"), "w") as z:
+        for ext, dado in (("shp", shp.getvalue()), ("shx", shx.getvalue()), ("dbf", dbf.getvalue()),
+                          ("cpg", b"UTF-8")):
+            z.writestr(zipfile.ZipInfo("BaseFerro/BaseFerro.%s" % ext, date_time=DATA_ZIP), dado)
+
+
+def test_ferrovias_por_estado_inteiras(pastas):
+    entrada, saida = pastas
+    _baseferro(entrada)
+    gb.gerar(entrada, saida, agora="a", log=lambda *a: None)
+    ind = _indice(saida)["camadas"]["ferrovias"]
+    assert ind["orgao"] == "Min. Transportes" and ind["campo_id"] == "id"
+    assert ind["data_referencia"] == "2024-04"
+    assert sorted(ind["ufs"]) == ["GO", "MG"] and ind["poligonos"] == 3
+    go = _ler(saida, "ferrovias_GO.geojson.gz")["features"]
+    assert go[0]["geometry"]["coordinates"][0] == [-49.12345679, -16.5]       # 8 casas
+    assert go[0]["properties"]["tip_situac"] == "Em Operação"                 # UTF-8 do .cpg
+    # a planejada vai inteira, como veio: o programa é que decide o que mostrar
+    assert go[1]["properties"]["tip_situac"] == "Planejada"

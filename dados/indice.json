@@ -960,6 +960,317 @@
     }
    }
   },
+  "ferrovias": {
+   "arquivo_origem": "BaseFerro.shp",
+   "campo_id": "id",
+   "data_arquivo": "2024-04-22",
+   "data_referencia": "2024-04",
+   "orgao": "Min. Transportes",
+   "poligonos": 4427,
+   "titulo": "Ferrovias",
+   "ufs": {
+    "AC": {
+     "arquivo": "ferrovias_AC.geojson.gz",
+     "bbox": [
+      -73.33468066,
+      -10.18836858,
+      -66.73605643,
+      -8.12948588
+     ],
+     "bytes": 1156,
+     "poligonos": 15,
+     "sha256": "5e59c766eeefdef1436c6d98464c778eedd954c7fba7d87511ad863c01c0695e"
+    },
+    "AL": {
+     "arquivo": "ferrovias_AL.geojson.gz",
+     "bbox": [
+      -36.82778371,
+      -10.21275064,
+      -35.721993,
+      -8.942847
+     ],
+     "bytes": 47391,
+     "poligonos": 49,
+     "sha256": "c35510abf36d22e23b12dc9ca60532c325476a101fe1c45913a9fce0584c45c7"
+    },
+    "AP": {
+     "arquivo": "ferrovias_AP.geojson.gz",
+     "bbox": [
+      -52.00189507,
+      -0.05578932,
+      -51.07658218,
+      0.88722082
+     ],
+     "bytes": 2646,
+     "poligonos": 5,
+     "sha256": "603eeba5007fb95022ee60adaabc44006b2b0483acb5e8b2a61fc6bcf2aeff6a"
+    },
+    "BA": {
+     "arquivo": "ferrovias_BA.geojson.gz",
+     "bbox": [
+      -46.1140773,
+      -14.86388113,
+      -37.89777974,
+      -8.82289038
+     ],
+     "bytes": 835625,
+     "poligonos": 227,
+     "sha256": "03792cbb55e46427b65fe02abd77b768fdbb2ca62322d8c17fe710438dc7aa7b"
+    },
+    "CE": {
+     "arquivo": "ferrovias_CE.geojson.gz",
+     "bbox": [
+      -41.08604465,
+      -7.85798258,
+      -38.4709278,
+      -3.47316287
+     ],
+     "bytes": 226921,
+     "poligonos": 269,
+     "sha256": "1a7eddca96d920e9fb510b5ef159f51f8d32e3b5b9fe827a5f55f260a1462236"
+    },
+    "DF": {
+     "arquivo": "ferrovias_DF.geojson.gz",
+     "bbox": [
+      -48.25857714,
+      -16.04986028,
+      -47.31591387,
+      -15.50227287
+     ],
+     "bytes": 5339,
+     "poligonos": 6,
+     "sha256": "2c8955db6e983b81b33cb9843441e82bbbbb54da9e433235a7b93e61576a49cb"
+    },
+    "ES": {
+     "arquivo": "ferrovias_ES.geojson.gz",
+     "bbox": [
+      -41.463667,
+      -21.20736319,
+      -40.058332,
+      -19.49154853
+     ],
+     "bytes": 64406,
+     "poligonos": 36,
+     "sha256": "89637432b188a97d33c67f6cdac0cc5fee19191b1bf549d573f92a05d8aa0c62"
+    },
+    "GO": {
+     "arquivo": "ferrovias_GO.geojson.gz",
+     "bbox": [
+      -53.10283277,
+      -19.09759877,
+      -46.11500205,
+      -12.83631793
+     ],
+     "bytes": 697171,
+     "poligonos": 212,
+     "sha256": "9b286e4586731586479cc4ca52bdd0475c1b0cf0e0ce0db800288f8a8583af99"
+    },
+    "MA": {
+     "arquivo": "ferrovias_MA.geojson.gz",
+     "bbox": [
+      -48.60228855,
+      -7.588703,
+      -42.82482984,
+      -1.76812992
+     ],
+     "bytes": 75823,
+     "poligonos": 151,
+     "sha256": "5d4ad37d2202e341e4c61dc78daa841707dba6d3ea5f852bba6b06c079e25375"
+    },
+    "MG": {
+     "arquivo": "ferrovias_MG.geojson.gz",
+     "bbox": [
+      -50.57160423,
+      -22.46832283,
+      -41.04792735,
+      -14.79096858
+     ],
+     "bytes": 732268,
+     "poligonos": 732,
+     "sha256": "5a711695c411db146120986ceefa4d863a38a14595956cd2e93e0c01118fc442"
+    },
+    "MS": {
+     "arquivo": "ferrovias_MS.geojson.gz",
+     "bbox": [
+      -57.882999,
+      -24.05643583,
+      -51.00750538,
+      -18.04027896
+     ],
+     "bytes": 114923,
+     "poligonos": 83,
+     "sha256": "787eb32606167115bd8f40462e2674a89a5c7d2de733036c9c8938c16b05fd66"
+    },
+    "MT": {
+     "arquivo": "ferrovias_MT.geojson.gz",
+     "bbox": [
+      -60.08241762,
+      -18.04027896,
+      -50.99612583,
+      -9.51540466
+     ],
+     "bytes": 549556,
+     "poligonos": 127,
+     "sha256": "024cccda077ab334ab9209bf8a0e4d5d312dbd3e845ff21c8ba0c720f67f7193"
+    },
+    "PA": {
+     "arquivo": "ferrovias_PA.geojson.gz",
+     "bbox": [
+      -56.38763813,
+      -9.51540466,
+      -46.32391804,
+      -0.69554078
+     ],
+     "bytes": 350596,
+     "poligonos": 66,
+     "sha256": "e72fd33e9bf211cef562a8014707aa8a55fd5505f1a9d9d8a633598ddcfdfa96"
+    },
+    "PB": {
+     "arquivo": "ferrovias_PB.geojson.gz",
+     "bbox": [
+      -38.66543791,
+      -7.422155,
+      -34.83232,
+      -6.47584596
+     ],
+     "bytes": 53931,
+     "poligonos": 145,
+     "sha256": "e995a62a3d3c5fbef1c8b9bfa6f29e526462b8579ae08a24434d56ba593db74e"
+    },
+    "PE": {
+     "arquivo": "ferrovias_PE.geojson.gz",
+     "bbox": [
+      -40.53839335,
+      -9.397008,
+      -34.87114783,
+      -7.422155
+     ],
+     "bytes": 317036,
+     "poligonos": 173,
+     "sha256": "afc20435d83bd8748fcf305099c24afbe56eb85ef599242996533638134f9507"
+    },
+    "PI": {
+     "arquivo": "ferrovias_PI.geojson.gz",
+     "bbox": [
+      -45.25174567,
+      -8.14552266,
+      -40.53839335,
+      -2.947936
+     ],
+     "bytes": 106040,
+     "poligonos": 77,
+     "sha256": "5abf2c7966605e478997c631648b2ab42307605018eb00594df5212fddb32a09"
+    },
+    "PR": {
+     "arquivo": "ferrovias_PR.geojson.gz",
+     "bbox": [
+      -54.591708,
+      -26.602912,
+      -48.522216,
+      -22.62851617
+     ],
+     "bytes": 986246,
+     "poligonos": 437,
+     "sha256": "4adcf0ddf4674e66abf9d383ae96ad627ffb947f5145b8f0b94ba63be1a5624c"
+    },
+    "RJ": {
+     "arquivo": "ferrovias_RJ.geojson.gz",
+     "bbox": [
+      -44.69686389,
+      -23.011664,
+      -41.02134099,
+      -21.13742442
+     ],
+     "bytes": 163532,
+     "poligonos": 197,
+     "sha256": "3d11e4234093251ad0d4472927ef94a260efe4fde706c6579f4bdea7808e5879"
+    },
+    "RN": {
+     "arquivo": "ferrovias_RN.geojson.gz",
+     "bbox": [
+      -38.03343683,
+      -6.501716,
+      -35.13540264,
+      -4.959171
+     ],
+     "bytes": 39071,
+     "poligonos": 72,
+     "sha256": "99430196073292844ae80cdb9e7e03468db49135b9faf3415fc8560e609b10c3"
+    },
+    "RO": {
+     "arquivo": "ferrovias_RO.geojson.gz",
+     "bbox": [
+      -66.73605643,
+      -12.85549205,
+      -60.08241762,
+      -8.70717626
+     ],
+     "bytes": 2285,
+     "poligonos": 30,
+     "sha256": "7d2e466d682aaa1715598b6a2c01d1b73224e698f939a204f0eb18c0dfd0fe03"
+    },
+    "RS": {
+     "arquivo": "ferrovias_RS.geojson.gz",
+     "bbox": [
+      -57.101311,
+      -32.57446827,
+      -50.67202171,
+      -27.13025094
+     ],
+     "bytes": 434037,
+     "poligonos": 418,
+     "sha256": "3a4823f24d3c2a9c3066fb672797673f9ec9622cd05621cae7259d8e4b0e3bad"
+    },
+    "SC": {
+     "arquivo": "ferrovias_SC.geojson.gz",
+     "bbox": [
+      -53.671999,
+      -28.92420959,
+      -48.599773,
+      -25.98148179
+     ],
+     "bytes": 382354,
+     "poligonos": 280,
+     "sha256": "7dee87cd9ec73b732d4b4624ef0704cea505c4986c5e2ffc054c44ba325abb59"
+    },
+    "SE": {
+     "arquivo": "ferrovias_SE.geojson.gz",
+     "bbox": [
+      -37.89777974,
+      -11.43794684,
+      -36.82196648,
+      -10.21275064
+     ],
+     "bytes": 25900,
+     "poligonos": 31,
+     "sha256": "6b9bf2c68505597ddd0a93287cec779ea2df5c6b07b063351a63dbebecbddf5e"
+    },
+    "SP": {
+     "arquivo": "ferrovias_SP.geojson.gz",
+     "bbox": [
+      -52.591048,
+      -24.712105,
+      -44.69686389,
+      -19.80118869
+     ],
+     "bytes": 571540,
+     "poligonos": 546,
+     "sha256": "7f0b815fa85abe4deb1cdadb5262fe04b4a2f9d1d3c26a40f41f9b1087b6e4fb"
+    },
+    "TO": {
+     "arquivo": "ferrovias_TO.geojson.gz",
+     "bbox": [
+      -49.1484207,
+      -12.98652026,
+      -46.1140773,
+      -6.55812803
+     ],
+     "bytes": 33111,
+     "poligonos": 43,
+     "sha256": "f3e9bae78982fd4dc60590060777f2b0854c1240586fca066441ee1709d2333a"
+    }
+   }
+  },
   "quilombolas": {
    "arquivo_origem": "Áreas de Quilombolas.shp",
    "data_arquivo": "2026-10-05",
@@ -14309,5 +14620,5 @@
  "casas_decimais": 8,
  "crs": "EPSG:4674",
  "formato": 1,
- "gerado_em": "2026-10-07T09:27:44-03:00"
+ "gerado_em": "2026-10-12T09:36:26-03:00"
 }

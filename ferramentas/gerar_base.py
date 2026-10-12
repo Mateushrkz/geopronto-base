@@ -14,6 +14,7 @@ extraídos. Cada camada é reconhecida pelo nome do .shp:
     UCs             «conservation_unit»                (ICMBio)
     Biomas          «lml_bioma_e250k_…»                (IBGE)
     Rodovias        «SNV_AAAAMMx»                      (DNIT – Sistema Nacional de Viação)
+    Ferrovias       «BaseFerro»                        (Ministério dos Transportes – BIT)
 
 Camada que não estiver na pasta fica como estava no índice — no mês a mês
 basta pôr na pasta só o que foi baixado de novo (assentamentos e quilombolas).
@@ -116,6 +117,14 @@ CAMADAS = {
     # programa. data_referencia sai do nome do arquivo (SNV_202607A -> 2026-07).
     "rodovias": {"achar": "snv", "titulo": "Rodovias", "orgao": "DNIT",
                  "uf": _uf_campo("sg_uf"), "campo_id": "vl_codigo", "referencia_do_nome": True},
+    # Ferrovias do Ministério dos Transportes (12/10/2026): «Base Georreferenciada
+    # – Ferrovias» do BIT, eixo, um trecho por registro (cortado na divisa de
+    # município), UF em «uf». Vai inteiro, como as rodovias — inclusive as
+    # planejadas, em estudo e em obra; quem decide o que aparece é o programa.
+    # data_referencia = a data da base no site do BIT (abr/2024; o .shp.xml diz
+    # 22/04/2024) — trocar aqui quando trocar o arquivo.
+    "ferrovias": {"achar": "baseferro", "titulo": "Ferrovias", "orgao": "Min. Transportes",
+                  "uf": _uf_campo("uf"), "campo_id": "id", "data_referencia": "2024-04"},
 }
 
 

@@ -15,10 +15,15 @@ Arquivos que a janela **«Confrontantes – base online»** do GeoPronto baixa q
 | Rodovias | `rodovias_<UF>.geojson.gz` | DNIT | SNV – Sistema Nacional de Viação (`SNV_AAAAMMx`, linhas no eixo) | quando sair versão nova do SNV |
 | Rios e córregos | `rios_<quadrado de 1°>.geojson.gz` | ANA | BHO 2017 5k – trechos de drenagem | parada (BHO 2017) |
 | Bacias hidrográficas | `bacias_<mesorregião>.geojson.gz` | IBGE | DHN250 2021 – `micro_RH` | quando sair versão nova |
+| Ferrovias | `ferrovias_<UF>.geojson.gz` | Ministério dos Transportes | BIT – Base Georreferenciada – Ferrovias (`BaseFerro`, linhas no eixo) | quando sair versão nova |
 
 ### Rodovias (DNIT)
 
 Fonte: **DNIT – Sistema Nacional de Viação (SNV), versão 202607A**, baixado do site do DNIT (Atlas e Mapas → PNV e SNV). O site do DNIT publica o seu conteúdo sob a licença **Creative Commons Atribuição-SemDerivações 3.0 (CC BY-ND 3.0)**. Por isso os arquivos `rodovias_<UF>.geojson.gz` trazem o dado **sem alteração**: só a mudança de formato (shapefile → GeoJSON, um arquivo por estado) e o arredondamento a 8 casas descrito abaixo. Nenhum ponto foi tirado e nenhum registro foi apagado.
+
+### Ferrovias (Ministério dos Transportes)
+
+Fonte: **Ministério dos Transportes – Banco de Informações de Transportes (BIT), «Base Georreferenciada – Ferrovias»** (`BaseFerro.zip`, abr/2024), baixada da página BIT → Mapas e bases georreferenciadas. O site gov.br publica o seu conteúdo sob **CC BY-ND 3.0**; por isso, como as rodovias, os arquivos `ferrovias_<UF>.geojson.gz` trazem o dado **sem alteração**: só a mudança de formato (um arquivo por estado, campo `uf`) e o arredondamento a 8 casas. Vão **todos** os trechos — em operação, desativada, em obra, estudo e planejada; quem decide o que aparece é o programa. Cada trecho é cortado na divisa de município. O arquivo **não traz a faixa de domínio**. A versão (`data_referencia = 2024-04`) fica no `gerar_base.py`.
 
 ### Bacias hidrográficas (IBGE)
 
@@ -73,7 +78,7 @@ O programa lê o índice primeiro e baixa só os arquivos cujo `bbox` encosta na
 4. Confira a quantidade de polígonos que aparece na tela.
 5. Suba a pasta `dados/` para o GitHub.
 
-**Camada que não estiver na pasta continua como estava.** Por isso o SNCI, as UCs, os biomas e as rodovias não precisam ser baixados de novo. Saiu SNV novo no site do DNIT: ponha o zip na pasta e rode o mesmo comando. Arquivo que não mudou sai com os mesmos bytes, então não cria versão nova no GitHub.
+**Camada que não estiver na pasta continua como estava.** Por isso o SNCI, as UCs, os biomas, as rodovias e as ferrovias não precisam ser baixados de novo (rios e bacias têm gerador próprio e também ficam como estão). Saiu SNV novo no site do DNIT: ponha o zip na pasta e rode o mesmo comando. Arquivo que não mudou sai com os mesmos bytes, então não cria versão nova no GitHub.
 
 ## Trava
 
